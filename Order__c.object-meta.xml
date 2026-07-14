@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Order</label><pluralLabel>Orders</pluralLabel>
+    <nameField><label>Order Number</label><type>Text</type></nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Customer__c</fullName><label>Customer</label><type>Lookup</type><referenceTo>Contact</referenceTo>
+    </fields>
+    <fields>
+        <fullName>Order_Date__c</fullName><label>Order Date</label><type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName><label>Status</label><type>Picklist</type>
+        <valueSet><valueSetDefinition><value><fullName>Ordered</fullName></value><value><fullName>Shipped</fullName></value><value><fullName>Delivered</fullName></value></valueSetDefinition></valueSet>
+    </fields>
+</CustomObject>

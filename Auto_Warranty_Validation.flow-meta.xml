@@ -1,0 +1,13 @@
+<Flow>
+    <label>Auto Warranty Validation</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start><triggerType>RecordAfterSave</triggerType><object>Case</object></start>
+    <getRecords><name>Get_Order</name><object>Order__c</object></getRecords>
+    <getRecords><name>Get_Product</name><object>Product__c</object></getRecords>
+    <decision><name>Check_Warranty</name>
+        <rules><name>In_Warranty</name><conditionLogic>and</conditionLogic>
+            <conditions><leftValueReference>Formula: MonthsBetween</leftValueReference><operator>LessThanOrEqual</operator><rightValue><elementReference>Product.Warranty_Months__c</elementReference></rightValue></conditions>
+        </rules>
+    </decision>
+    <assignment><name>Update_Warranty</name><assignmentItems><field>Warranty_Status__c</field><value><stringValue>In Warranty</stringValue></value></assignmentItems></assignment>
+</Flow>

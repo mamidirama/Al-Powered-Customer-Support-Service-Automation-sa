@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Generates empathetic AI reply for customer support cases</description>
+    <label>Customer Support Reply Generator</label>
+    <apiName>Customer_Support_Reply_Generator</apiName>
+    <inputSection>
+        <inputParams>
+            <name>Case.Subject</name>
+            <dataType>String</dataType>
+        </inputParams>
+        <inputParams>
+            <name>Case.Description</name>
+            <dataType>String</dataType>
+        </inputParams>
+        <inputParams>
+            <name>Case.Warranty_Status__c</name>
+            <dataType>String</dataType>
+        </inputParams>
+        <inputParams>
+            <name>Case.Product__c</name>
+            <dataType>String</dataType>
+        </inputParams>
+        <inputParams>
+            <name>Case.Order__r.Status__c</name>
+            <dataType>String</dataType>
+        </inputParams>
+    </inputSection>
+    <promptText>
+System: You are AquaSupport AI, professional support agent for Electronics &amp; Gadgets company.
+
+Context:
+Subject: {!$Input:Case.Subject}
+Description: {!$Input:Case.Description}
+Warranty: {!$Input:Case.Warranty_Status__c}
+Product: {!$Input:Case.Product__c}
+Order Status: {!$Input:Case.Order__r.Status__c}
+
+Rules:
+1. Be empathetic and professional in 3-4 lines
+2. If "In Warranty" -> Offer free repair/RMA with case number
+3. If "Out of Warranty" -> Offer paid service center link
+4. If "Order Tracking" -> Use Order Status and give ETA
+5. End with: "Is there anything else I can help with?"
+    </promptText>
+    <status>Active</status>
+    <templateType>Field Generation</templateType>
+</PromptTemplate>
