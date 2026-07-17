@@ -29,7 +29,91 @@ Customer_Support_Reply_Generator.prm	Prompt Template	Standardize AI responses
 
 --------
 
-*4.⚡ Summary*
+🎯 *4.Project Structure *
+AI-Powered-Customer-Support-Automation/
+│
+├── README.md                                    # Project overview
+│
+├── AIReplyGenerator.cls                         # Apex class for AI reply generation
+├── AIReplyGenerator.cls-meta.xml                # Metadata file
+│
+├── Auto_Warranty_Validation.flow-meta.xml       # Flow for auto warranty check
+│
+├── Customer_Support_Reply_Generator.prm         # AI Prompt Template
+│
+├── Order__c.object-meta.xml                     # Custom Object: Order
+├── Product__c.object-meta.xml                   # Custom Object: Product
+│
+├── Architecture.pdf                             # System architecture diagram
+│
+└── docs/                                        # Documentation Folder
+    │
+    ├── Month1-Summary.md                        # Month 1 work summary
+    ├── Month2-Summary.md                        # Month 2 work summary
+    │
+    ├── Daily-Reports/                           # Day wise reports
+    │   ├── Week1.md
+    │   ├── Week2.md
+    │   ├── Week3.md
+    │   └── ... up to Week8.md
+    │
+    ├── Weekly-Reports/                          # Weekly summary
+    │   ├── Week1.md
+    │   ├── Week2.md
+    │   └── ... up to Week8.md
+    │
+    └── Final-Internship-Report.pdf              # Complete 2-month report
+
+  🎯*5.System Architecture *
+    
+┌─────────────────────────────────────────────────────────────┐
+│                     CUSTOMER                                 │
+│              Submits Case / Query                            │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    SALESFORCE SERVICE CLOUD                  │
+│                                                              │
+│  ┌──────────────┐         ┌──────────────────────────────┐   │
+│  │   Case       │────────▶│  Auto_Warranty_Validation    │   │
+│  │   Object     │         │  Flow                        │   │
+│  └──────────────┘         └──────────────┬───────────────┘   │
+│         │                                │                   │
+│         │                                ▼                   │
+│         │                     ┌──────────────────────┐       │
+│         │                     │ Order__c + Product__c│       │
+│         │                     │  Custom Objects      │       │
+│         │                     └──────────────────────┘       │
+│         │                                                    │
+│         ▼                                                    │
+│  ┌───────────────────────────────────────────────────────┐   │
+│  │         AIReplyGenerator.cls - Apex Class             │   │
+│  │                                                       │   │
+│  │ 1. Takes Case Details as Input                       │   │
+│  │  2. Uses Prompt Template                              │   │
+│  │  3. Calls AI Agent API                                │   │
+│  └────────────────────┬──────────────────────────────────┘   │
+│                       │                                      │
+│                       ▼                                      │
+│  ┌───────────────────────────────────────────────────────┐   │
+│  │   Customer_Support_Reply_Generator.prm                │   │
+│  │   AI Prompt Template                                  │   │
+│  └────────────────────┬──────────────────────────────────┘   │
+│                       │                                      │
+│                       ▼                                      │
+│  ┌───────────────────────────────────────────────────────┐   │
+│  │              Salesforce AI Agent / OpenAI API         │   │
+│  │              Generates Professional Reply             │   │
+│  └────────────────────┬──────────────────────────────────┘   │
+└───────────────────────┼──────────────────────────────────────┘
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│              AGENT / CUSTOMER GETS AI REPLY                  │
+│         Response time reduced + Consistent replies           │
+└─────────────────────────────────────────────────────────────┘
+*6.⚡ Summary*
 
 *1: Foundation & Automation 
 - Learned Salesforce Admin and Service Cloud
@@ -45,7 +129,8 @@ Customer_Support_Reply_Generator.prm	Prompt Template	Standardize AI responses
   
 --------
 
-*5. 🎯Sample Weekly Reports*
+*7. 🎯Sample Weekly Reports*
+
   * Project kickoff, Service Cloud basics, Object design
   * Flow Builder training, Warranty validation flow completed  
   * AI Agent setup, Prompt engineering started  
@@ -53,17 +138,22 @@ Customer_Support_Reply_Generator.prm	Prompt Template	Standardize AI responses
   * Final testing, Documentation, Project submission
 --------
 
-*6. ⚡Outcomes & Impact*
+*8. ⚡Outcomes & Impact*
+
 1. 60% reduction in manual support tasks
 2. Warranty check time reduced from 10 minutes to 30 seconds  
 3. Consistent and faster AI-generated replies
 4. Hands-on experience with Salesforce + AI
+   
 -------
 
-*7. ⚡Skills Learned*
+*9. ⚡Skills Learned*
+
 Salesforce Administration, Service Cloud, Flow Automation, Apex, AI Agent, Prompt Engineering, Documentation
 
 -----
-*8. 🎯Conclusion*
+
+*10. 🎯Conclusion*
+
 This internship provided practical experience in combining Salesforce Admin skills with AI to solve real customer support problems. 
 The automation built will help reduce agent workload and improve customer satisfaction.
