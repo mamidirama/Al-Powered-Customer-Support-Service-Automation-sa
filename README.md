@@ -2,7 +2,7 @@
 
 *📄 AI Powered Customer Support and service automation- Internship
 
-*1. Cover Page*
+
 AI POWERED CUSTOMER SUPPORT AND SERVICE AUTOMATION
 
 Internship Documentation
@@ -10,6 +10,7 @@ Internship Documentation
 Course: Salesforce Certified Administrator with AI Agent
 
 Intern Name: Smartbridge internship 
+
 *2. Project Overview*
 This 2-month internship focused on building an AI-powered customer support system using Salesforce. 
 The goal was to automate repetitive tasks like reply generation and warranty validation to improve efficiency.
@@ -25,7 +26,7 @@ Customer_Support_Reply_Generator.prm	Prompt Template	Standardize AI responses
 
 *4.  Summary*
 
-*1: Foundation & Automation - Weeks 1 to 4*
+*1: Foundation & Automation 
 - Learned Salesforce Admin and Service Cloud
 - Created Order*c and Product*c objects
 - Built Auto Warranty Validation Flow
@@ -36,24 +37,28 @@ Customer_Support_Reply_Generator.prm	Prompt Template	Standardize AI responses
 - Developed AIReplyGenerator Apex class
 - Created prompt template for support replies
 - Testing, bug fixing, and final documentation
+  
+--------
 
 *5. Sample Weekly Reports*
-
-*Week 1:* Project kickoff, Service Cloud basics, Object design  
-*Week 3:* Flow Builder training, Warranty validation flow completed  
-*Week 5:* AI Agent setup, Prompt engineering started  
-*Week 7:* Integration testing, Performance optimization  
-*Week 8:* Final testing, Documentation, Project submission
+  * Project kickoff, Service Cloud basics, Object design
+  * Flow Builder training, Warranty validation flow completed  
+  * AI Agent setup, Prompt engineering started  
+  * Integration testing, Performance optimization  
+  * Final testing, Documentation, Project submission
+--------
 
 *6. Outcomes & Impact*
 1. 60% reduction in manual support tasks
 2. Warranty check time reduced from 10 minutes to 30 seconds  
 3. Consistent and faster AI-generated replies
 4. Hands-on experience with Salesforce + AI
+-------
 
 *7. Skills Learned*
 Salesforce Administration, Service Cloud, Flow Automation, Apex, AI Agent, Prompt Engineering, Documentation
 
+-----
 *8. Conclusion*
 This internship provided practical experience in combining Salesforce Admin skills with AI to solve real customer support problems. 
 The automation built will help reduce agent workload and improve customer satisfaction.
