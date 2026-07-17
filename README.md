@@ -64,6 +64,8 @@ AI-Powered-Customer-Support-Automation/
     │
     └── Final-Internship-Report.pdf              # Complete 2-month report
 
+-------
+
   🎯*5.System Architecture *
     
 ┌─────────────────────────────────────────────────────────────┐
@@ -113,6 +115,9 @@ AI-Powered-Customer-Support-Automation/
 │              AGENT / CUSTOMER GETS AI REPLY                  │
 │         Response time reduced + Consistent replies           │
 └─────────────────────────────────────────────────────────────┘
+
+------
+
 *6.⚡ Summary*
 
 *1: Foundation & Automation 
