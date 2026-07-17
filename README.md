@@ -11,10 +11,13 @@ Course: Salesforce Certified Administrator with AI Agent
 
 Intern Name: Smartbridge internship 
 
+-------
+
 *2. Project Overview*
 This 2-month internship focused on building an AI-powered customer support system using Salesforce. 
 The goal was to automate repetitive tasks like reply generation and warranty validation to improve efficiency.
 
+------
 
 *3. Key Components*
 Component	Type	Purpose
@@ -23,6 +26,8 @@ Auto_Warranty_Validation.flow	Salesforce Flow	Auto validate warranty on case cre
 Order__c	Custom Object	Store order details
 Product__c	Custom Object	Store product warranty info
 Customer_Support_Reply_Generator.prm	Prompt Template	Standardize AI responses
+
+--------
 
 *4.  Summary*
 
